@@ -19,7 +19,7 @@ public class DxdzDialogAction implements ActionListener{
 	private DxdzDialog frame;
 	
 	public DxdzDialogAction(DxdzDialog frame){
-		this.frame=frame;
+		this.frame=frame; 
 	}
 
 	@Override
@@ -27,6 +27,7 @@ public class DxdzDialogAction implements ActionListener{
 		XtszDialog xtszDialog=(XtszDialog)frame.getParent();
 		MgradeDao mgDao=new MgradeDao();
 		DazheDao dzDao=new DazheDao();
+		//666
 		if(e.getSource().equals(frame.getMjbSavedxdz())){
 			Double ptbkdzbl;
 			if(frame.getJtfdzbldx().getText().toString().equals("нч")){
